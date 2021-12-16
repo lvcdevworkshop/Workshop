@@ -21,7 +21,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Data;
 
-// Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+
 
 namespace Workshop
 {
