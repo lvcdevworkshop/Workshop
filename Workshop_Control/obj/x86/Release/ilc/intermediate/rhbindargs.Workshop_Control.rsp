@@ -1,0 +1,16 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\x86\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\intermediate\MDIL\Workshop_Control.mdilexe"
+"/i:C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\intermediate\Native\Workshop_Control.exe"
+"/pdbAltPath:C:\Users\Prog_vincent\LVC\Workshop_Control\bin\x86\Release\ilc"
+"/res:C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

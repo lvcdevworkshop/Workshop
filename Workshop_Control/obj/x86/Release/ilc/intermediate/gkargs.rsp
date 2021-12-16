@@ -1,0 +1,7 @@
+﻿"C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\in\Workshop_Control.exe"
+/Lib:"C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\x86\ilc\lib\Private"
+/WinMD:"C:\Users\Prog_vincent\LVC\Workshop_Control\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"44fd8563-55d1-495e-9b04-88a69e98ba62\",\"Id\":\"cfb6b154-dc66-455d-bf45-30be33f8c71e\",\"ProcessStartTime\":637718725511447145}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\LibraryXML"
+/RunOnlyPreDR
