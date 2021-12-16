@@ -1,0 +1,209 @@
+﻿<Page
+    x:Class="Workshop_Control.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Workshop_Control"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    RequestedTheme="Dark"
+    mc:Ignorable="d">
+
+    <Grid Height="600">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <RelativePanel
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="7"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <TextBlock x:Name="Title" FontSize="32" />
+        </RelativePanel>
+        <Button
+            x:Name="All_OFF_BTN"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Width="150"
+            Height="75"
+            HorizontalAlignment="Center"
+            Background="Red"
+            CanBeScrollAnchor="True"
+            CanDrag="True"
+            Click="All_OFF_BTN_Click"
+            CornerRadius="10,10,10,10">
+            <Image Source="/Assets/stop.png" />
+        </Button>
+        <RelativePanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="7"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <Image
+                x:Name="Comp_Img"
+                Width="100"
+                Height="100"
+                Margin="10"
+                RelativePanel.AlignHorizontalCenterWithPanel="True"
+                RelativePanel.AlignLeftWithPanel="True"
+                RelativePanel.AlignVerticalCenterWithPanel="True"
+                Source="/Assets/compresseur.png" />
+            <ToggleSwitch
+                x:Name="Comp_SW"
+                IsOn="False"
+                RelativePanel.AlignVerticalCenterWithPanel="True"
+                RelativePanel.RightOf="Comp_Img"
+                Toggled="Comp_SW_Toggled" />
+        </RelativePanel>
+        <Button
+            x:Name="Auto_Man_BTN"
+            Grid.Row="1"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Width="150"
+            Height="75"
+            HorizontalAlignment="Center"
+            Background="Green"
+            CanBeScrollAnchor="True"
+            CanDrag="True"
+            Click="Auto_Man_BTN_Click"
+            Content="AUTO"
+            CornerRadius="10,10,10,10"
+            FontSize="32"
+            FontWeight="ExtraBold"
+            Foreground="White" />
+        <RelativePanel
+            Grid.Row="3"
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <Image
+                x:Name="Aspi_Img"
+                Width="100"
+                Height="100"
+                Margin="10"
+                RelativePanel.AlignHorizontalCenterWithPanel="True"
+                RelativePanel.AlignLeftWithPanel="True"
+                RelativePanel.AlignVerticalCenterWithPanel="True"
+                Source="/Assets/aspi.png" />
+            <ToggleSwitch
+                x:Name="Aspi_SW"
+                IsOn="False"
+                RelativePanel.AlignVerticalCenterWithPanel="True"
+                RelativePanel.RightOf="Aspi_Img"
+                Toggled="Aspi_SW_Toggled" />
+        </RelativePanel>
+        <Image
+            x:Name="Scie_Img"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Width="100"
+            Height="100"
+            Margin="10"
+            Source="/Assets/scie.png" />
+        <ToggleSwitch
+            x:Name="Scie_SW"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            HorizontalAlignment="Right"
+            IsEnabled="False"
+            IsOn="False"
+            Toggled="Scie_SW_Toggled" />
+        <Image
+            x:Name="Ponceuse_Img"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="6"
+            Width="125"
+            Height="125"
+            Margin="10"
+            Source="/Assets/ponceuse.png" />
+        <ToggleSwitch
+            x:Name="Ponceuse_SW"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="5"
+            HorizontalAlignment="Right"
+            IsEnabled="False"
+            IsOn="False"
+            Toggled="Ponceuse_SW_Toggled" />
+        <Image
+            x:Name="Rabot_Img"
+            Grid.Row="4"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Width="100"
+            Height="1000"
+            Margin="10"
+            Source="/Assets/rabot.png" />
+        <ToggleSwitch
+            x:Name="Rabot_SW"
+            Grid.Row="4"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            HorizontalAlignment="Right"
+            HorizontalContentAlignment="Left"
+            IsEnabled="False"
+            IsOn="False"
+            Toggled="Rabot_SW_Toggled" />
+        <Image
+            x:Name="Drill_Img"
+            Grid.Row="4"
+            Grid.RowSpan="2"
+            Grid.Column="6"
+            Width="100"
+            Height="100"
+            Margin="10"
+            Source="/Assets/perceuse.png" />
+        <ToggleSwitch
+            x:Name="Drill_SW"
+            Grid.Row="4"
+            Grid.RowSpan="2"
+            Grid.Column="5"
+            HorizontalAlignment="Right"
+            IsEnabled="False"
+            IsOn="False"
+            Toggled="Drill_SW_Toggled" />
+        <Button
+            x:Name="Quit"
+            Grid.Row="0"
+            Grid.Column="6"
+            HorizontalAlignment="Right"
+            Background="Red"
+            Click="Quit_Click"
+            FontWeight="Bold"
+            Foreground="White">
+            <Image Source="/Assets/quit.png" />
+        </Button>
+        <RelativePanel
+            Grid.Row="6"
+            Grid.Column="6"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center">
+            <TextBlock x:Name="Version" FontSize="10" />
+        </RelativePanel>
+    </Grid>
+</Page>
