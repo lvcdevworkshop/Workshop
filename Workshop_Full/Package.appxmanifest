@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="6a440243-933b-42cd-bb60-bb93bd59f055"
-    Publisher="CN=Prog_vincent"
+    Name="a8a9aae1-f315-4a50-a590-56a85d75fe9a"
+    Publisher="CN=LVC"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="6a440243-933b-42cd-bb60-bb93bd59f055" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="a8a9aae1-f315-4a50-a590-56a85d75fe9a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Workshop_Full</DisplayName>
-    <PublisherDisplayName>Prog_vincent</PublisherDisplayName>
+    <DisplayName>Workshop</DisplayName>
+    <PublisherDisplayName>LVC</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,15 +30,17 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="Workshop_Full.App">
+      EntryPoint="Workshop.App">
       <uap:VisualElements
-        DisplayName="Workshop_Full"
+        DisplayName="Workshop"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Workshop_Full"
+        Description="Workshop"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lvc>
+  <App Title="Workshop" />
+  <Toupie V_Motor="2880" F_Motor="50" D_Motor="99" D_Tree="50"></Toupie>
+  <Rabot V_Motor="3000" F_Motor="60" D_Motor="100" D_Tree="80"/>
+</lvc>
